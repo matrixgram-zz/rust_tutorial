@@ -1,15 +1,99 @@
-\documentclass{article}
+\documentclass{book}
 \usepackage[utf8]{inputenc}
+\usepackage{hyperref}
 
-\title{rust_tutorials}
-\author{mohamadhayeri9 }
+\usepackage{listings}
+\lstset
+{ %Formatting for code in appendix
+    language=Matlab,
+    basicstyle=\footnotesize,
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=1,
+    breaklines=true,
+    breakatwhitespace=false,
+}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{Rust Tutorials}
+\author{Mohammad Hayeri \\ \href{mailto:matrixgram1994@gmail.com}{MatrixGram1994@gmail.com}}
+
 \date{June 2020}
 
 \begin{document}
 
 \maketitle
+\chapter{Introduction}
+\section{History Rust}
+\section{Why Rust?}
+\section{Install Rust}
+\subsection{Linux Fedora Based}
+\subsection{From source}
+\section{simple Variables}
+\subsection{Constant}
+\subsection{Mutable and immutable}
+\subsection{Integers}
+\begin{center}
+\begin{tabular}{ |c c c c|  }
+ \hline
+ Size   & Sign  &   Unsigned & Minimum & Maximum\\
+ 8bits      &   i8  &   u8\\
+ 16bits     &   i16  &   u16\\
+ 32bits     &   i32  &   u32\\
+ 64bits     &   i64  &   u64\\
+ sys arch   &   isize  &   usize\\
+ \hline
+\end{tabular}
+\end{center}
 
-\section{Introduction}
-
+\begin{lstlisting}[language=C, caption=Definition variables]
+fn main() {
+    println!("Hello, world!");
+}
+\end{lstlisting}
+\subsection{Floats}
+\subsection{bool}
+\subsection{char}
+unicode
+ascii
+\section{Operators}
+\subsection{bool ops}
+\subsection{non bool ops}
+\section{array}
+out of index
+\begin{lstlisting}[language=C, caption=Definition variables]
+fn main() {
+    println!("Hello, world!{}{:?}{:#?}");
+}
+\end{lstlisting}
+\section{tuple}
+\lstlistoflistings
 \end{document}
 
